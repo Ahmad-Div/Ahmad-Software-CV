@@ -83,7 +83,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(/resources/images/bakground.webp) no-repeat;
+    background: url(/bakground.webp) no-repeat;
     color: white;
     background-size: cover;
     background-position: center;

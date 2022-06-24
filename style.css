@@ -1,0 +1,644 @@
+/* google font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Fira+Sans:wght@600&family=Inconsolata:wght@600&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+
+/* * means all the elemnts */
+
+
+/* general settings */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* We have border-box and content-box */
+    scroll-behavior: smooth;
+}
+
+
+
+/* navigation bar (header section) */
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 120px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3a6cf4;
+}
+
+.navigation a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #3a6cf4;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navigation a:hover {
+    color: #601cfc;
+}
+
+
+/* main section */
+
+
+section {
+    padding: 100px 200px;
+}
+
+.main-content {
+    padding-left: 50px;
+    line-height: 50px;
+}
+
+.main-content span {
+    font-size: 3em;
+    color: #3a6cf4;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.main-content span:hover {
+    color: #601cfc;
+    transition: color 1s;
+}
+
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/resources/images/bakground.webp) no-repeat;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    font-size: 1.8em;
+    color: white;
+    font-weight: bold;
+}
+
+.main h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.main-button {
+    text-decoration: none;
+    color: white;
+    padding: 0em 2.1875em;
+    background-color: #3a6cf4;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: 0.7s ease;
+    margin-bottom: 10px;
+}
+
+.main-button:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+    color: wheat;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 2em;
+    padding: 0 10px;
+    color: white;
+    transition: 0.7s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #3a6cf4;
+}
+
+.social-icons .youtube-button:hover {
+    color: #FF0000;
+    transform: scale(1.1);
+}
+
+/* serveces page style */
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 19.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: wheat;
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.4em;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 1em;
+}
+
+
+/* project page style */
+
+.projects {
+    background-color: #000016;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 18em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-picture img {
+    width: 100%;
+}
+
+.project-picture img:hover {
+    opacity: 0.9;
+}
+
+
+.project-info {
+    padding: 1em;
+}
+
+.projct-category {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+    transition: 0.7s ease;
+}
+
+
+.more-details:hover {
+    color: #601cfc;
+}
+
+/* About section style */
+
+.about .about-card {
+    background-color: white;
+    border: 1px solid #000016;
+    overflow: hidden;
+    min-height: 16em;
+    width: 40em;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(1, 1, 1, 15%);
+    transition: 0.7s ease;
+    font-size: 20px;
+}
+
+.about .about-card:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #000016;
+}
+
+.my-img {
+    margin-right: 100px;
+}
+
+.my-img img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 200px;
+}
+
+.about .about-card .bio {
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+
+/* hobbies section styel */
+
+.hobbies {
+    background-color: #000016;
+}
+
+.hobbies .content .hobby-card .hobby-header {
+    color: #3a6cf4;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.hobby-card {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.7s ease;
+    margin: 20px 0;
+    width: 80em;
+    text-align-last: center;
+}
+
+.hobby-card:hover {
+    border-color: #000016;
+    color: #000016;
+    transform: scale(1.1);
+}
+
+.hobbies .content .hobby-card .icon {
+    font-size: 5em;
+}
+
+.hobbies .content .hobby-card .hobby-text {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+
+/* contact section style */
+
+
+.contact {
+    background-color: white;
+}
+
+.contact .content .card {
+    width: 30em;
+    height: 22em;
+}
+
+.contact .content .info .contact-type {
+    color: #000016;
+    font-size: 1.2em;
+}
+
+.info a {
+    text-decoration: none;
+}
+
+.contact .content .card .info h3 {
+    color: #000016;
+    transition: 0.7s ease;
+}
+
+.contact .content .card .info h3:hover {
+    color: #3a6cf4;
+}
+
+
+
+/* footer section style */
+
+.footer {
+    background-color: #000016;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    color: #fff;
+}
+
+.social-icons-footer a {
+    display: inline-block;
+    font-size: 2em;
+    padding: 0 10px;
+    color: white;
+    transition: 0.7s ease;
+}
+
+.social-icons-footer a:hover {
+    transform: scale(1.1);
+    color: #3a6cf4;
+}
+
+.social-icons-footer .youtube-button:hover {
+    color: #FF0000;
+    transform: scale(1.1);
+}
+
+.footer-title {
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.footer span {
+    color: #3a6cf4;
+}
+
+
+@media (max-width:1024px) {
+
+    .main-content span {
+        font-size: 2em;
+        color: #3a6cf4;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 40px;
+    }
+
+    .main-content {
+        padding-left: 50px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width:1023px) {
+    header {
+        background-color: #f0f0f0;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 10px;
+    }
+
+    .navigation a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #3a6cf4;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-left: 100px;
+    }
+
+    .project-card {
+        background-color: white;
+        border: 1px solid white;
+        min-height: 14em;
+        width: 30em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+    }
+
+
+    .about .about-card {
+        width: 30em;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .my-img {
+        margin-right: 30px;
+    }
+
+    .hobby-card {
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 20px;
+        transition: 0.7s ease;
+        margin: 20px 0;
+        width: 40em;
+        text-align-last: center;
+    }
+
+    .title {
+        font-size: 1.4em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 641px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-content {
+        padding-left: 50px;
+        line-height: 30px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+
+
+    .project-card {
+        text-align: center;
+        justify-content: center;
+        width: 16em;
+    }
+
+    .about .about-card {
+        width: 16em;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .my-img {
+        margin-right: 20px;
+    }
+
+    .hobby-card {
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 20px;
+        transition: 0.7s ease;
+        margin: 20px 0;
+        width: 20em;
+        text-align-last: center;
+    }
+
+    header {
+        background-color: #f0f0f0;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 10px;
+    }
+
+    .navigation a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #3a6cf4;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-left: 50px;
+    }
+
+    .contact .content .card {
+        width: 20em;
+        height: 22em;
+    }
+
+    .contact .content .card .info h3 {
+        color: #000016;
+        transition: 0.7s ease;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+
+    .about .about-card {
+        width: 10em;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .my-img {
+        margin-right: 5px;
+    }
+
+    .project-card {
+        background-color: white;
+        border: 1px solid white;
+        min-height: 14em;
+        width: 20em;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 20px;
+        transition: 0.7s ease;
+    }
+
+    .main-content {
+        padding-left: 50px;
+        line-height: 25px;
+    }
+
+
+    header {
+        background-color: #f0f0f0;
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navigation a {
+        margin-right: 5px;
+        text-decoration: none;
+        color: #3a6cf4;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-left: 20px;
+    }
+
+
+}

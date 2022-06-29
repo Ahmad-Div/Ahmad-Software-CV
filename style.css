@@ -16,12 +16,30 @@
     scroll-behavior: smooth;
 }
 
+/* dark theme web setting */
+
+
+:root {
+    --primary-color: #f0f0f0;
+    --secondary-color: #000016;
+    --header-navbar-color: #3a6cf4;
+    --service-card-color: wheat;
+    --moon-color: #000016;
+}
+
+.dark-theme {
+    --primary-color: #000016;
+    --secondary-color: #f0f0f0;
+    --header-navbar-color: #f0f0f0;
+    --service-card-color: #000016;
+    --moon-color: #f0f0f0;
+}
 
 
 /* navigation bar (header section) */
 
 header {
-    background-color: #f0f0f0;
+    background-color: var(--primary-color);
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -36,20 +54,31 @@ header {
     font-size: 1.4em;
     font-weight: bold;
     text-transform: uppercase;
-    color: #3a6cf4;
+    color: var(--header-navbar-color);
+}
+
+.fa-moon {
+    cursor: pointer;
 }
 
 .navigation a {
     margin-right: 40px;
     text-decoration: none;
-    color: #3a6cf4;
+    color: var(--header-navbar-color);
     font-weight: bold;
     font-size: 1.1em;
+    translate: 0.7s ease;
 }
 
 .navigation a:hover {
     color: #601cfc;
 }
+
+#icon {
+    color: var(--moon-color);
+}
+
+
 
 
 /* main section */
@@ -64,6 +93,29 @@ section {
     line-height: 50px;
 }
 
+.both-main-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro-img {
+    margin-left: 200px;
+    color: #000016;
+}
+
+.pro-img img {
+    width: 434px;
+    height: 600px;
+    border: 10px solid #3a6cf4;
+    border-radius: 50px;
+    transition: 0.7s ease;
+}
+
+.pro-img img:hover {
+    transform: scale(1.1);
+    border-color: wheat;
+}
+
 .main-content span {
     font-size: 3em;
     color: #3a6cf4;
@@ -76,6 +128,7 @@ section {
     color: #601cfc;
     transition: color 1s;
 }
+
 
 
 .main {
@@ -114,9 +167,15 @@ section {
     font-weight: bold;
     border-radius: 10px;
     letter-spacing: 1px;
-    display: inline-block;
+    display: block;
     transition: 0.7s ease;
     margin-bottom: 10px;
+    width: 14em;
+    text-align: center;
+}
+
+#hire-button {
+    margin-top: 20px;
 }
 
 .main-button:hover {
@@ -144,6 +203,7 @@ section {
     transform: scale(1.1);
 }
 
+
 /* serveces page style */
 
 .title {
@@ -163,7 +223,7 @@ section {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--primary-color);
     width: 19.25em;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
     border-radius: 10px;
@@ -174,7 +234,7 @@ section {
 
 .card:hover {
     transform: scale(1.1);
-    background-color: wheat;
+    background-color: var(--service-card-color);
 }
 
 .icon {
@@ -196,13 +256,14 @@ section {
 
 .info p {
     font-size: 1em;
+    color: var(--secondary-color);
 }
 
 
 /* project page style */
 
 .projects {
-    background-color: #000016;
+    background-color: var(--secondary-color);
 }
 
 .projects .content {
@@ -210,8 +271,8 @@ section {
 }
 
 .project-card {
-    background-color: white;
-    border: 1px solid white;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     min-height: 14em;
     width: 18em;
     overflow: hidden;
@@ -240,11 +301,16 @@ section {
 .projct-category {
     margin-bottom: 10px;
     font-size: 1em;
+    color: var(--secondary-color);
 }
 
 .project-title {
     display: flex;
     justify-content: space-between;
+}
+
+.project-title span {
+    color: var(--secondary-color);
 }
 
 .more-details {
@@ -261,8 +327,9 @@ section {
 /* About section style */
 
 .about .about-card {
-    background-color: white;
-    border: 1px solid #000016;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
     overflow: hidden;
     min-height: 16em;
     width: 40em;
@@ -279,8 +346,8 @@ section {
 
 .about .about-card:hover {
     transform: scale(1.1);
-    color: white;
-    background-color: #000016;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 .my-img {
@@ -299,10 +366,12 @@ section {
 }
 
 
+
+
 /* hobbies section styel */
 
 .hobbies {
-    background-color: #000016;
+    background-color: var(--secondary-color);
 }
 
 .hobbies .content .hobby-card .hobby-header {
@@ -315,7 +384,7 @@ section {
 }
 
 .hobby-card {
-    border: 2px solid white;
+    border: 2px solid var(--primary-color);
     border-radius: 20px;
     padding: 20px;
     transition: 0.7s ease;
@@ -325,8 +394,8 @@ section {
 }
 
 .hobby-card:hover {
-    border-color: #000016;
-    color: #000016;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
     transform: scale(1.1);
 }
 
@@ -335,7 +404,7 @@ section {
 }
 
 .hobbies .content .hobby-card .hobby-text {
-    color: white;
+    color: var(--primary-color);
     font-size: 1.2em;
 }
 
@@ -345,16 +414,17 @@ section {
 
 
 .contact {
-    background-color: white;
+    background-color: var(--primary-color);
 }
 
 .contact .content .card {
     width: 30em;
     height: 22em;
+    border: 2px solid var(--secondary-color);
 }
 
 .contact .content .info .contact-type {
-    color: #000016;
+    color: var(--secondary-color);
     font-size: 1.2em;
 }
 
@@ -363,7 +433,7 @@ section {
 }
 
 .contact .content .card .info h3 {
-    color: #000016;
+    color: var(--secondary-color);
     transition: 0.7s ease;
 }
 
@@ -376,18 +446,18 @@ section {
 /* footer section style */
 
 .footer {
-    background-color: #000016;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     padding: 2em;
-    color: #fff;
+    color: var(--primary-color);
 }
 
 .social-icons-footer a {
     display: inline-block;
     font-size: 2em;
     padding: 0 10px;
-    color: white;
+    color: var(--primary-color);
     transition: 0.7s ease;
 }
 
@@ -410,6 +480,12 @@ section {
     color: #3a6cf4;
 }
 
+@media(max-width:1280px) {
+    .pro-img {
+        margin-left: 40px;
+    }
+}
+
 
 @media (max-width:1024px) {
 
@@ -421,15 +497,28 @@ section {
         margin-top: 40px;
     }
 
+    .logo {
+        margin-right: 20px;
+        font-size: 1.1em;
+    }
+
     .main-content {
         padding-left: 50px;
         line-height: 60px;
+    }
+
+    .pro-img {
+        margin-left: 35px;
+    }
+
+    .main-content {
+        padding-left: 5px;
     }
 }
 
 @media (max-width:1023px) {
     header {
-        background-color: #f0f0f0;
+        background-color: var(--primary-color);
         width: 100%;
         position: fixed;
         z-index: 999;
@@ -448,8 +537,8 @@ section {
     }
 
     .project-card {
-        background-color: white;
-        border: 1px solid white;
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
         min-height: 14em;
         width: 30em;
         overflow: hidden;
@@ -471,7 +560,7 @@ section {
     }
 
     .hobby-card {
-        border: 2px solid white;
+        border: 2px solid var(--primary-color);
         border-radius: 20px;
         padding: 20px;
         transition: 0.7s ease;
@@ -511,8 +600,29 @@ section {
     }
 
     .main-content {
+        margin-top: 30px;
         padding-left: 50px;
         line-height: 30px;
+        font-size: 1.2em;
+    }
+
+    .main-content span {
+        margin-top: 5px;
+    }
+
+    .both-main-img {
+        display: inline-block;
+    }
+
+
+    .pro-img {
+        margin-top: 40px;
+        position: relative;
+    }
+
+    .pro-img img {
+        width: 300px;
+        height: 370px;
     }
 
     body {
@@ -526,6 +636,7 @@ section {
     .main-content h3 {
         font-size: 1.4em;
     }
+
 
 
     .project-card {
@@ -556,7 +667,7 @@ section {
     }
 
     header {
-        background-color: #f0f0f0;
+        background-color: var(--primary-color);
         width: 100%;
         position: fixed;
         z-index: 999;
@@ -581,8 +692,29 @@ section {
     }
 
     .contact .content .card .info h3 {
-        color: #000016;
+        color: var(--secondary-color);
         transition: 0.7s ease;
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width:360px) {
+    .pro-img img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media(max-width:320px) {
+    .about .about-card {
+        width: 14em;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .navigation a {
+        margin-right: 5px;
         font-size: 0.8em;
     }
 }
@@ -590,6 +722,15 @@ section {
 @media (max-width:300px) {
     body {
         font-size: 10px;
+    }
+
+    .pro-img img {
+        width: 200px;
+        height: 220px;
+    }
+
+    .main-content {
+        padding-left: 10px;
     }
 
     .about .about-card {
@@ -604,8 +745,8 @@ section {
     }
 
     .project-card {
-        background-color: white;
-        border: 1px solid white;
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
         min-height: 14em;
         width: 20em;
         overflow: hidden;
@@ -621,7 +762,7 @@ section {
 
 
     header {
-        background-color: #f0f0f0;
+        background-color: var(--primary-color);
         width: 100%;
         position: fixed;
         z-index: 999;

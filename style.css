@@ -702,7 +702,7 @@ section {
 @media(max-width:360px) {
     .pro-img img {
         width: 250px;
-        height: fit-content;
+        height: 250px;
     }
 }
 

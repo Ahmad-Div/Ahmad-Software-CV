@@ -101,11 +101,12 @@ section {
 .pro-img {
     margin-left: 200px;
     color: #000016;
+    margin-top: 4rem;
 }
 
 .pro-img img {
     width: 434px;
-    height: 600px;
+    height: fit-content;
     border: 10px solid #3a6cf4;
     border-radius: 50px;
     transition: 0.7s ease;
@@ -622,7 +623,7 @@ section {
 
     .pro-img img {
         width: 300px;
-        height: 370px;
+        height: fit-content;
     }
 
     body {
@@ -701,7 +702,7 @@ section {
 @media(max-width:360px) {
     .pro-img img {
         width: 250px;
-        height: 300px;
+        height: fit-content;
     }
 }
 
@@ -726,7 +727,7 @@ section {
 
     .pro-img img {
         width: 200px;
-        height: 220px;
+        height: fit-content;
     }
 
     .main-content {

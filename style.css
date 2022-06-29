@@ -106,7 +106,7 @@ section {
 
 .pro-img img {
     width: 30rem;
-    height: fit-content;
+    height: 30rem;
     border: 10px solid #3a6cf4;
     border-radius: 300px;
     transition: 0.7s ease;

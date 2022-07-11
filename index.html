@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- These are css and fonts -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resources/CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -20,685 +20,772 @@
 
     <!-- header of my webstie -->
     <header>
-        <a href="#" class="logo">Ahmad Software</a>
+        <a href="#" class="logo under">Ahmad Software</a>
         <nav class="navigation">
+            <a class="under" href="#services">Services<div class=""></div></a>
+
+            <a class="under" href="#projects">Projects<div class=""></div></a>
+            <a class="under" href="#about">About<div class=""></div></a>
+            <a class="under" href="#hobbies">Hobbies<div class=""></div></a>
+            <a class="under" href="#contact">Contact<div class=""></div></a>
+            <i class="fa-solid fa-moon" id="icon"></i>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+
+
+    <!-- mobile navbar -->
+
+    <main>
+
+
+        <div class="mobile-nav">
             <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#contact">Contact</a>
-            <i class="fa-solid fa-moon" id="icon"></i>
-        </nav>
-    </header>
-
-
-
-    <!-- main section of my website -->
-
-    <!-- section is also like div but section is more semantic -->
-    <section class="main">
-        <div class="both-main-img">
-            <div class="main-content">
-                <!-- we use span here to change it's style seperatly from the h2 -->
-                <h2>Hello, I'm Ahmad<br><span>Developer</span></h2>
-                <h3>I'm a computer science creative student</h3>
-                <a href="#projects" class="main-button">View my Work</a>
-                <a href="#contact" class="main-button" id="hire-button">Hire me</a>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/ahmad-sattar-50519022a/"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100046621757093"><i
-                            class="fa-brands fa-facebook-square"></i></a>
-                    <a class="youtube-button" href="https://www.youtube.com/channel/UCAiNkVKFGi1QRZARjyG2yuw"><i
-                            class="fa-brands fa-youtube"></i></a>
-                    <a href="https://github.com/Ahmad-Div"><i class="fa-brands fa-github-square"></i></a>
-                    <a href="https://discord.gg/b2NrpJpqmf"><i class="fa-brands fa-discord"></i></a>
-                </div>
-            </div>
-            <div class="pro-img">
-                <img src="my-pic-3.jpg" alt="">
-            </div>
         </div>
 
-    </section>
 
 
-    <!-- services section of my website -->
+        <!-- main section of my website -->
 
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-code"></i>
-                </div>
-                <div class="info">
-                    <h3>Web development</h3>
-                    <p>Thanks to God, I can develop websites, I've created so many websites like this one.
-                    </p>
-                </div>
-            </div>
+        <!-- section is also like div but section is more semantic -->
+        <section class="main">
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-gamepad"></i>
-                </div>
-                <div class="info">
-                    <h3>Game development</h3>
-                    <p>I can develop games with unity and C# language, I have created 2d game and published it.
-                    </p>
-                </div>
-            </div>
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-java"></i>
+            <div class="both-main-img">
+                <div class="main-content">
+                    <!-- we use span here to change it's style seperatly from the h2 -->
+                    <div class="main-content-texts">
+                        <h2>Hello, I'm Ahmad<br>
+                            <span>Developer</span>
+                        </h2>
+                        <h3>I'm a computer science creative student</h3>
+                        <button class="main-button">
+                            <a href="#projects">View my Work</a></button>
+                        <button class="main-button">
+                            <a href="#contact" id="hire-button">Hire me</a></button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ahmad-sattar-50519022a/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100046621757093"><i
+                                class="fa-brands fa-facebook-square"></i></a>
+                        <a class="youtube-button" href="https://www.youtube.com/channel/UCAiNkVKFGi1QRZARjyG2yuw"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com/Ahmad-Div"><i class="fa-brands fa-github-square"></i></a>
+                        <a href="https://discord.gg/b2NrpJpqmf"><i class="fa-brands fa-discord"></i></a>
+                    </div>
                 </div>
-                <div class="info">
-                    <h3>Problem solving</h3>
-                    <p>I can solve so many problems with many good frameworks and APIs
-                        in Java.
-                    </p>
+                <div class="pro-img">
+                    <img src="my-pic-3.jpg" alt="">
                 </div>
             </div>
 
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-compass-drafting"></i>
-                </div>
-                <div class="info">
-                    <h3>Web Design</h3>
-                    <p>I can design webpages using adobe programms or with pen and paper.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-chalkboard-user"></i>
-                </div>
-                <div class="info">
-                    <h3>Teaching</h3>
-                    <p>I have the ability to teach people in smooth way and people
-                        can understand my speech perfectly.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-                <div class="info">
-                    <h3>Content creator</h3>
-                    <p>I have a youtube channel, there I'm uploading creative videos
-                        about coding and developing, please subscribe!.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
+        <!-- services section of my website -->
 
-    <!-- Projects section -->
+        <section class="cards" id="services">
+            <h2 class="title under">Services</h2>
+            <div class="content">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Web development</h3>
+                        <p>Thanks to God, I can develop websites, I've created so many websites like this one.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Game development</h3>
+                        <p>I can develop games with unity and C# language, I have created 2d game and published it.
+                        </p>
+                    </div>
+                </div>
 
-    <section class="projects" id="projects">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Problem solving</h3>
+                        <p>I can solve so many problems with many good frameworks and APIs
+                            in Java.
+                        </p>
+                    </div>
+                </div>
 
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="java.JPG" alt="">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Web Design</h3>
+                        <p>I can design webpages using adobe programms or with pen and paper.
+                        </p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="projct-category">Java Snake Game</p>
-                    <strong class="project-title">
-                        <span>Java Games</span>
-                        <a title="click here for the project" href="https://www.youtube.com/watch?v=HOCN3kQChbQ"
-                            class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="java.JPG" alt="">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Teaching</h3>
+                        <p>I have the ability to teach people in smooth way and people
+                            can understand my speech perfectly.
+                        </p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <p class="projct-category">Java Tic Tac Toe Game</p>
-                    <strong class="project-title">
-                        <span>Java Games</span>
-                        <a title="click here for the project" href="https://www.youtube.com/watch?v=2Kz57MzJrCw"
-                            class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="java.JPG" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">Java Mobile Console</p>
-                    <strong class="project-title">
-                        <span>Java Projects</span>
-                        <a title="click here for the project" href="https://www.youtube.com/watch?v=QpCN33ibeSo"
-                            class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="unity.png" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">Tile Vania Project</p>
-                    <strong class="project-title">
-                        <span>Unity Projects</span>
-                        <a title="click here for the project" href="https://www.youtube.com/watch?v=ewPpOCVwITo"
-                            class="more-details">More details</a>
-                    </strong>
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Content creator</h3>
+                        <p>I have a youtube channel, there I'm uploading creative videos
+                            about coding and developing, please subscribe!.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="active-states.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project" href="https://ahmad-div.github.io/Card-Design-AS/"
-                            class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="desktop-design.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/QR-code-card-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="card-challenge.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/card-design-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="music-card.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/music-card-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="company-card.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Company-card-AhmadSoftware/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="car-card.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/car-card-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="personal-card.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/personal-card-ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="grid-cards.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Testimonials-grid-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="Social-proof.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Social-proof-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="fylo-data-web-design.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Fylo-data-storage-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="four-card-design.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/four-card-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="single-price-desing.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Single-price-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-             <div class="project-card">
-                <div class="project-picture">
-                    <img src="full-web-page-1.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Clipboard-landing-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-             <div class="project-card">
-                <div class="project-picture">
-                    <img src="huddle-web-desing.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Huddle-landing-page-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-             <div class="project-card">
-                <div class="project-picture">
-                    <img src="huddle-single-page.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Huddle-single-page-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="chat-app-design.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Chat-App-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="feedback-card-js.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Interactive-rating-component-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="FAQ-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project" href="https://ahmad-div.github.io/FAQ-JS-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="post-article-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Article-post-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="fylo-landing-page-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Fylo_landing-page-Ahmad-Software/#main-section"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="coming-soon-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/coming-soon-page-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="sign-up-form-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/sign-up-form-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="coming-soon2-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/single-column-coming-soon-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="chart-money.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Expenses-chart-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="nav-bar-web-JS.jpg" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/dropdown-navigation-Ahmad-Software/"
-                            class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-picture">
-                    <img src="game.png" alt="">
-                </div>
-                <div class="project-info">
-                    <p class="projct-category">HTML & CSS & JS</p>
-                    <strong class="project-title">
-                        <span>Web projects</span>
-                        <a title="click here for the project"
-                            href="https://ahmad-div.github.io/Simon-Game-Ahmad-Software/" class="more-details">More
-                            details</a>
-                    </strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About section -->
-
-
-    <section class="about" id="about">
-        <h2 class="title">About</h2>
-        <div class="content">
-            <div class="about-card">
-                <div class="my-img">
-                    <img src="my-pic.jpg" alt="">
-                </div>
-                <div class="bio">
-                    <p>My name is Ahmad Salah, I'm from Iraq sulaimaniah.
-                        I'm 19 years old and student in computer science department.
-                        I work hard and learn everyday, I'm looking forward to work with you.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
 
-    <!-- Hobbies section -->
+        <!-- Projects section -->
 
 
-    <section class="hobbies" id="hobbies">
-        <h2 class="title">Hobbies</h2>
-        <div class="content">
-            <div class="hobby-card">
+        <section class="projects" id="projects">
 
-                <div class="icon">
-                    <i class="fa-regular fa-1"></i>
+            <h2 class="title under">Projects</h2>
+            <div class="content">
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="java.JPG" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">Java Snake Game</p>
+                            <strong class="project-title">
+                                <span>Java Games</span>
+                                <a title="click here for the project" href="https://www.youtube.com/watch?v=HOCN3kQChbQ"
+                                    class="more-details">More details</a>
+                            </strong>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="hobby-header">Typing</h3>
-                <div class="hobby-text">
-                    <p>I'm very good at typing, it's one of my
-                        hobbies, I can type 80 - 100 wpm with accuracy of
-                        95%.
-                    </p>
+
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="java.JPG" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">Java Tic Tac Toe Game</p>
+                            <strong class="project-title">
+                                <span>Java Games</span>
+                                <a title="click here for the project" href="https://www.youtube.com/watch?v=2Kz57MzJrCw"
+                                    class="more-details">More details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="java.JPG" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">Java Mobile Console</p>
+                            <strong class="project-title">
+                                <span>Java Projects</span>
+                                <a title="click here for the project" href="https://www.youtube.com/watch?v=QpCN33ibeSo"
+                                    class="more-details">More details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="unity.png" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">Tile Vania Project</p>
+                            <strong class="project-title">
+                                <span>Unity Projects</span>
+                                <a title="click here for the project" href="https://www.youtube.com/watch?v=ewPpOCVwITo"
+                                    class="more-details">More details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="active-states.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project" href="https://ahmad-div.github.io/Card-Design-AS/"
+                                    class="more-details">More details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="desktop-design.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/QR-code-card-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="card-challenge.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/card-design-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="music-card.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/music-card-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="company-card.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Company-card-AhmadSoftware/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="car-card.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/car-card-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="personal-card.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/personal-card-ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="grid-cards.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Testimonials-grid-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="Social-proof.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Social-proof-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="fylo-data-web-design.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Fylo-data-storage-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="four-card-design.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/four-card-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="single-price-desing.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Single-price-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="full-web-page-1.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Clipboard-landing-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="huddle-web-desing.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Huddle-landing-page-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="huddle-single-page.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Huddle-single-page-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="chat-app-design.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Chat-App-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="feedback-card-js.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Interactive-rating-component-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="FAQ-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/FAQ-JS-Ahmad-Software/" class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="post-article-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Article-post-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="fylo-landing-page-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Fylo_landing-page-Ahmad-Software/#main-section"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="coming-soon-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/coming-soon-page-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="sign-up-form-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/sign-up-form-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="coming-soon2-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/single-column-coming-soon-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="chart-money.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Expenses-chart-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="nav-bar-web-JS.jpg" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/dropdown-navigation-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-card-content">
+                        <div class="project-picture">
+                            <img src="game.png" alt="">
+                        </div>
+                        <div class="project-info">
+                            <p class="projct-category">HTML & CSS & JS</p>
+                            <strong class="project-title">
+                                <span>Web projects</span>
+                                <a title="click here for the project"
+                                    href="https://ahmad-div.github.io/Simon-Game-Ahmad-Software/"
+                                    class="more-details">More
+                                    details</a>
+                            </strong>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
 
-            <div class="hobby-card">
-
-                <div class="icon">
-                    <i class="fa-regular fa-2"></i>
-                </div>
-                <h3 class="hobby-header">Gaming</h3>
-                <div class="hobby-text">
-                    <p>Gaming is another world, but when devs playing games
-                        they focus on other things, "How the game created?"
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- About section -->
 
 
-
-    <!-- Contact section  -->
-
-    <section class="contact" id="contact">
-        <h2 class="title">Let's Work together</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="info">
-                    <h3 class="contact-type">Phone</h3>
-                    <h3>07501167153</h3>
+        <section class="about" id="about">
+            <h2 class="title under">About</h2>
+            <div class="content">
+                <div class="about-card">
+                    <div class="my-img">
+                        <img src="my-pic.jpg" alt="">
+                    </div>
+                    <div class="bio">
+                        <p>My name is Ahmad Salah, I'm from Iraq sulaimaniah.
+                            I'm 19 years old and student in computer science department.
+                            I work hard and learn everyday, I'm looking forward to work with you.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-regular fa-envelope"></i>
+        </section>
+
+
+
+        <!-- Hobbies section -->
+
+
+        <section class="hobbies" id="hobbies">
+            <h2 class="title under">Hobbies</h2>
+            <div class="content">
+                <div class="hobby-card">
+
+                    <div class="icon">
+                        <i class="fa-regular fa-1"></i>
+                    </div>
+                    <h3 class="hobby-header">Typing</h3>
+                    <div class="hobby-text">
+                        <p>I'm very good at typing, it's one of my
+                            hobbies, I can type 80 - 100 wpm with accuracy of
+                            95%.
+                        </p>
+                    </div>
                 </div>
-                <div class="info">
-                    <h3 class="contact-type">Email</h3>
-                    <a href="mailto:dr.ahmad.salah.54@gmail.com">
-                        <h3>dr.ahmad.salah.54@gmail.com</h3>
-                    </a>
+
+
+                <div class="hobby-card">
+
+                    <div class="icon">
+                        <i class="fa-regular fa-2"></i>
+                    </div>
+                    <h3 class="hobby-header">Gaming</h3>
+                    <div class="hobby-text">
+                        <p>Gaming is another world, but when devs playing games
+                            they focus on other things, "How the game created?"
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- Footer section -->
+
+        <!-- Contact section  -->
+
+        <section class="contact-section" id="contact">
+            <h2 class="title under">Let's Work together</h2>
+            <div class="content">
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="info">
+                        <h3 class="contact-type">Phone</h3>
+                        <h3>07501167153</h3>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h3 class="contact-type">Email</h3>
+                        <a href="mailto:dr.ahmad.salah.54@gmail.com">
+                            <h3 id="email">dr.ahmad.salah.54</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <footer class="footer">
-        <p class="footer-title">copyrights @ <span>Ahmad Sofware</span></p>
-        <div class="social-icons-footer">
-            <a href="https://www.linkedin.com/in/ahmad-sattar-50519022a/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100046621757093"><i
-                    class="fa-brands fa-facebook-square"></i></a>
-            <a class="youtube-button" href="https://www.youtube.com/channel/UCAiNkVKFGi1QRZARjyG2yuw"><i
-                    class="fa-brands fa-youtube"></i></a>
-            <a href="https://github.com/Ahmad-Div"><i class="fa-brands fa-github-square"></i></a>
-            <a href="https://discord.gg/b2NrpJpqmf"><i class="fa-brands fa-discord"></i></a>
-        </div>
-    </footer>
+        <!-- Footer section -->
 
-    <script>
-        var dark = document.getElementById("icon");
-        dark.onclick = function () {
-            document.body.classList.toggle("dark-theme");
-            if (dark.classList.contains('fa-solid fa-moon')) {
-                dark.classList.remove("fa-solid fa-moon");
-                dark.classList.add("fa-solid fa-sun");
-            } else {
-                dark.classList.remove("fa-solid fa-sun");
-                dark.classList.add("fa-solid fa-moon");
-            }
-        }
-    </script>
 
+        <footer class="footer">
+            <p class="footer-title">copyrights @ <span class="under">Ahmad Sofware</span></p>
+            <div class="social-icons-footer">
+                <a href="https://www.linkedin.com/in/ahmad-sattar-50519022a/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100046621757093"><i
+                        class="fa-brands fa-facebook-square"></i></a>
+                <a class="youtube-button" href="https://www.youtube.com/channel/UCAiNkVKFGi1QRZARjyG2yuw"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Ahmad-Div"><i class="fa-brands fa-github-square"></i></a>
+                <a href="https://discord.gg/b2NrpJpqmf"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </footer>
+    </main>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
 
 </html>

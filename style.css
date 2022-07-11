@@ -46,7 +46,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 120px;
+    padding: 1% 4%;
 }
 
 .logo {
@@ -57,18 +57,36 @@ header {
     color: var(--header-navbar-color);
 }
 
-.fa-moon {
+.fa-solid {
     cursor: pointer;
+    margin: auto 0;
+}
+
+.navigation .fa-bars {
+    display: none;
+    margin: 0 0 0 32%;
+    cursor: pointer;
+
+}
+
+.navigation {
+    width: 50%;
+    min-width: 35rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
 }
 
 .navigation a {
-    margin-right: 40px;
+    margin-right: 2rem;
     text-decoration: none;
     color: var(--header-navbar-color);
     font-weight: bold;
     font-size: 1.1em;
     translate: 0.7s ease;
+    position: relative;
 }
+
 
 .navigation a:hover {
     color: #601cfc;
@@ -79,37 +97,104 @@ header {
 }
 
 
+/* under class to make line under */
+
+.under {
+    position: relative;
+    cursor: pointer;
+}
+
+.under::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: aqua;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: 0.25s ease;
+}
+
+.under:hover::after {
+    transform: scaleX(1);
+}
+
+/* *************************** */
+
+
+
+
+
+/* current class for line under currrent page */
+
+
+.current-section {
+    background-color: aqua;
+    background-size: 100% 3px;
+    height: 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+
+/* *************************** */
+
+
+
 
 
 /* main section */
 
 
+
+
 section {
-    padding: 100px 200px;
+    padding: 10% 13%;
 }
 
-.main-content {
-    padding-left: 50px;
-    line-height: 50px;
+.main {
+    width: 100%;
+    padding-right: 2%;
 }
+
+
 
 .both-main-img {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
 }
 
+.main-content {
+    padding-left: 3.5%;
+    line-height: 350%;
+    width: 50%;
+    min-width: 32rem;
+}
+
+.main-content-texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .pro-img {
-    margin-left: 200px;
     color: #000016;
     margin-top: 4rem;
+    width: 40%;
+    min-width: 22rem;
 }
 
 .pro-img img {
-    width: 30rem;
-    height: 30rem;
+    width: 100%;
     border: 10px solid #3a6cf4;
     border-radius: 300px;
     transition: 0.7s ease;
+    min-width: 22rem;
 }
 
 .pro-img img:hover {
@@ -118,11 +203,12 @@ section {
 }
 
 .main-content span {
-    font-size: 3em;
+    font-size: clamp(3rem, 8vw, 6rem);
     color: #3a6cf4;
     font-weight: bold;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 4%;
+    cursor: pointer;
 }
 
 .main-content span:hover {
@@ -145,38 +231,43 @@ section {
 }
 
 .main h2 {
-    font-size: 1.8em;
+    font-size: clamp(1rem, 6vw, 1.5rem);
     color: white;
     font-weight: bold;
 }
 
 .main h3 {
-    font-size: 1.4em;
+    font-size: clamp(1rem, 6vw, 1.5rem);
     font-weight: bold;
     color: white;
     letter-spacing: 1px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 2%;
+    margin-bottom: 3%;
 }
 
 .main-button {
     text-decoration: none;
     color: white;
-    padding: 0em 2.1875em;
+    padding: 0.6rem 2rem;
     background-color: #3a6cf4;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
     letter-spacing: 1px;
-    display: block;
     transition: 0.7s ease;
-    margin-bottom: 10px;
-    width: 14em;
+    margin-bottom: 4%;
+    width: 14rem;
     text-align: center;
+    cursor: pointer;
+}
+
+.main-button a {
+    text-decoration: none;
+    color: white;
 }
 
 #hire-button {
-    margin-top: 20px;
+    margin-top: 3%;
 }
 
 .main-button:hover {
@@ -187,9 +278,9 @@ section {
 
 .social-icons a {
     display: inline-block;
-    margin-top: 20px;
-    font-size: 2em;
-    padding: 0 10px;
+    margin-top: 2%;
+    font-size: 2rem;
+    padding: 0 2%;
     color: white;
     transition: 0.7s ease;
 }
@@ -211,9 +302,14 @@ section {
     display: flex;
     justify-content: center;
     color: #3a6cf4;
-    font-size: 2.2em;
+    font-size: clamp(1.5rem, 6vw, 2.2rem);
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#services {
+    padding: 6% 8%;
 }
 
 .content {
@@ -221,15 +317,16 @@ section {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .card {
     background-color: var(--primary-color);
-    width: 19.25em;
+    width: 19.25rem;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
     border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
+    padding: 2rem;
+    margin: 2%;
     transition: 0.7s ease;
 }
 
@@ -240,23 +337,26 @@ section {
 
 .icon {
     color: #3a6cf4;
-    font-size: 8em;
+    font-size: clamp(4rem, 8vw, 8rem);
     text-align: center;
 }
 
 .info {
     text-align: center;
+    width: 100%;
 }
 
 .info h3 {
     color: #3a6cf4;
-    font-size: 1.4em;
-    margin: 20px;
+    font-size: clamp(0.8rem, 6vw, 1.4rem);
+    margin: 8% 0;
     font-weight: bold;
+    width: 100%;
 }
 
 .info p {
-    font-size: 1em;
+    font-size: clamp(0.6rem, 5vw, 1rem);
+    width: 100%;
     color: var(--secondary-color);
 }
 
@@ -265,25 +365,39 @@ section {
 
 .projects {
     background-color: var(--secondary-color);
+    padding: 6% 8%;
 }
 
 .projects .content {
-    margin-top: 30px;
+    margin-top: 4rem;
 }
+
+
 
 .project-card {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
-    min-height: 14em;
-    width: 18em;
+    min-height: 14rem;
+    width: 18rem;
     overflow: hidden;
     border-radius: 10px;
-    margin: 20px;
+    margin: 2%;
     transition: 0.7s ease;
+    min-width: 14rem;
 }
 
 .project-card:hover {
     transform: scale(1.1);
+}
+
+.project-card-content {
+    width: 100%;
+    min-width: 14rem;
+}
+
+.project-picture {
+    width: 100%;
+    max-height: 10rem;
 }
 
 .project-picture img {
@@ -298,18 +412,23 @@ section {
 
 
 .project-info {
-    padding: 1em;
+    padding: 1rem;
+
 }
 
+
+
 .projct-category {
-    margin-bottom: 10px;
-    font-size: 1em;
+    margin-bottom: 4%;
+    font-size: clamp(0.8rem, 4vw, 1.2rem);
     color: var(--secondary-color);
 }
 
 .project-title {
     display: flex;
     justify-content: space-between;
+    font-size: clamp(0.8rem, 5vw, 1rem);
+    text-align: center;
 }
 
 .project-title span {
@@ -329,22 +448,33 @@ section {
 
 /* About section style */
 
+.about {
+    width: 100%;
+}
+
+.about .content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .about .about-card {
     background-color: var(--primary-color);
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     overflow: hidden;
-    min-height: 16em;
-    width: 40em;
+    min-height: 16rem;
+    width: 100%;
     border-radius: 10px;
-    margin: 10px;
+    margin: 2%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding: 3%;
     box-shadow: 0 10px 25px rgba(1, 1, 1, 15%);
     transition: 0.7s ease;
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .about .about-card:hover {
@@ -354,7 +484,9 @@ section {
 }
 
 .my-img {
-    margin-right: 100px;
+    width: 30%;
+    min-width: 15rem;
+    margin-right: 3%;
 }
 
 .my-img img {
@@ -364,8 +496,15 @@ section {
 }
 
 .about .about-card .bio {
-    padding-top: 30px;
-    font-size: 1.2em;
+    width: 60%;
+    margin: auto 0;
+    min-width: 20rem;
+}
+
+.about .about-card .bio p {
+    line-height: 180%;
+    font-size: clamp(0.4rem, 6vw, 1.2rem);
+
 }
 
 
@@ -381,18 +520,18 @@ section {
     color: #3a6cf4;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
-    font-size: 1.8em;
+    margin: 3% 0;
+    font-size: 1.8rem;
     text-transform: uppercase;
 }
 
 .hobby-card {
     border: 2px solid var(--primary-color);
     border-radius: 20px;
-    padding: 20px;
+    padding: 3%;
     transition: 0.7s ease;
-    margin: 20px 0;
-    width: 80em;
+    margin: 3% 0;
+    width: 80rem;
     text-align-last: center;
 }
 
@@ -403,12 +542,12 @@ section {
 }
 
 .hobbies .content .hobby-card .icon {
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 .hobbies .content .hobby-card .hobby-text {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: clamp(0.4rem, 6vw, 1.2rem);
 }
 
 
@@ -416,33 +555,68 @@ section {
 /* contact section style */
 
 
-.contact {
+.contact-section {
     background-color: var(--primary-color);
+    width: 100%;
+    padding: 3% 6%;
 }
 
-.contact .content .card {
-    width: 30em;
-    height: 22em;
-    border: 2px solid var(--secondary-color);
+.contact-section .contact {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
 }
 
-.contact .content .info .contact-type {
+.content .contact-card {
+    width: 28rem;
+    height: fit-content;
+    border: 3px solid var(--secondary-color);
+    margin: 3%;
+    border-radius: 10px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    transform: scale(1.1);
+}
+
+.contact-card .icon {
+    width: 100%;
+}
+
+.contact-card .info {
+    width: 100%;
+}
+
+.contact-type {
     color: var(--secondary-color);
     font-size: 1.2em;
 }
 
 .info a {
     text-decoration: none;
+    width: 100%;
+    font-size: 150%;
 }
 
-.contact .content .card .info h3 {
+.contact-card .info h3 {
     color: var(--secondary-color);
     transition: 0.7s ease;
+    cursor: pointer;
 }
 
-.contact .content .card .info h3:hover {
+.contact-card .info h3:hover {
     color: #3a6cf4;
 }
+
+
 
 
 
@@ -451,15 +625,26 @@ section {
 .footer {
     background-color: var(--secondary-color);
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2em;
+    padding: 2rem;
     color: var(--primary-color);
+    width: 100%;
+}
+
+.social-icons-footer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 
 .social-icons-footer a {
-    display: inline-block;
-    font-size: 2em;
-    padding: 0 10px;
+
+    font-size: 2rem;
+
     color: var(--primary-color);
     transition: 0.7s ease;
 }
@@ -477,311 +662,218 @@ section {
 .footer-title {
     padding-top: 15px;
     font-weight: bold;
+    width: 50%;
+
 }
 
 .footer span {
     color: #3a6cf4;
 }
 
-@media(max-width:1280px) {
-    .pro-img {
-        margin-left: 40px;
-    }
+
+/* mobile nav bar  */
+
+
+.mobile-nav {
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    border: 2px solid white;
+    z-index: 999;
 }
 
-
-@media (max-width:1024px) {
-
-    .main-content span {
-        font-size: 2em;
-        color: #3a6cf4;
-        font-weight: bold;
-        display: inline-block;
-        margin-top: 40px;
-    }
-
-    .logo {
-        margin-right: 20px;
-        font-size: 1.1em;
-    }
-
-    .main-content {
-        padding-left: 50px;
-        line-height: 60px;
-    }
-
-    .pro-img {
-        margin-left: 35px;
-    }
-
-    .main-content {
-        padding-left: 5px;
-    }
+.mobile-nav a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 5%;
+    transition: 0.7s ease;
 }
 
-@media (max-width:1023px) {
-    header {
-        background-color: var(--primary-color);
-        width: 100%;
-        position: fixed;
-        z-index: 999;
-        display: flex;
-        justify-content: space-between;
-        padding: 12px 10px;
-    }
-
-    .navigation a {
-        margin-right: 20px;
-        text-decoration: none;
-        color: #3a6cf4;
-        font-weight: bold;
-        font-size: 1.1em;
-        margin-left: 100px;
-    }
-
-    .project-card {
-        background-color: var(--primary-color);
-        border: 1px solid var(--primary-color);
-        min-height: 14em;
-        width: 30em;
-        overflow: hidden;
-        border-radius: 10px;
-        margin: 20px;
-        transition: 0.7s ease;
-    }
-
-
-    .about .about-card {
-        width: 30em;
-        text-align: center;
-        justify-content: center;
-
-    }
-
-    .my-img {
-        margin-right: 30px;
-    }
-
-    .hobby-card {
-        border: 2px solid var(--primary-color);
-        border-radius: 20px;
-        padding: 20px;
-        transition: 0.7s ease;
-        margin: 20px 0;
-        width: 40em;
-        text-align-last: center;
-    }
-
-    .title {
-        font-size: 1.4em;
-    }
-
-    section {
-        padding: 80px 20px;
-    }
-
-    .main-content h2 {
-        font-size: 1em;
-    }
-
-    .main-content h3 {
-        font-size: 1.6em;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
+.mobile-nav a:hover {
+    transform: scale(1.1);
+    color: aqua;
 }
 
+@media(max-width:1025px) {
 
-@media (max-width: 641px) {
-
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    .main-content {
-        margin-top: 30px;
-        padding-left: 50px;
-        line-height: 30px;
-        font-size: 1.2em;
-    }
-
-    .main-content span {
-        margin-top: 5px;
+    .main {
+        padding-left: 12%;
     }
 
     .both-main-img {
-        display: inline-block;
+        flex-direction: column;
+
     }
 
+    .main-content {
+        width: 100%;
+        padding-left: 5%;
+    }
 
     .pro-img {
-        margin-top: 40px;
-        position: relative;
-    }
-
-    .pro-img img {
-        width: 300px;
-        height: 300px;
-    }
-
-    body {
-        font-size: 12px;
-    }
-
-    .main-content h2 {
-        font-size: 0.8em;
-    }
-
-    .main-content h3 {
-        font-size: 1.4em;
-    }
-
-
-
-    .project-card {
-        text-align: center;
-        justify-content: center;
-        width: 16em;
-    }
-
-    .about .about-card {
-        width: 16em;
-        text-align: center;
-        justify-content: center;
-
-    }
-
-    .my-img {
-        margin-right: 20px;
-    }
-
-    .hobby-card {
-        border: 2px solid white;
-        border-radius: 20px;
-        padding: 20px;
-        transition: 0.7s ease;
-        margin: 20px 0;
-        width: 20em;
-        text-align-last: center;
-    }
-
-    header {
-        background-color: var(--primary-color);
         width: 100%;
-        position: fixed;
-        z-index: 999;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 12px 10px;
+        min-width: 10rem;
     }
 
-    .navigation a {
-        margin-right: 10px;
-        text-decoration: none;
-        color: #3a6cf4;
-        font-weight: bold;
-        font-size: 1.1em;
-        margin-left: 50px;
-    }
 
-    .contact .content .card {
-        width: 20em;
-        height: 22em;
-    }
-
-    .contact .content .card .info h3 {
-        color: var(--secondary-color);
-        transition: 0.7s ease;
-        font-size: 0.8em;
-    }
-}
-
-@media(max-width:360px) {
     .pro-img img {
-        width: 250px;
-        height: 250px;
+        width: 65%;
+        margin: 0 auto;
+        min-width: 10rem;
     }
-}
 
-@media(max-width:320px) {
     .about .about-card {
-        width: 14em;
-        text-align: center;
-        justify-content: center;
-        margin: 0;
+        flex-direction: column;
     }
 
-    .navigation a {
-        margin-right: 5px;
-        font-size: 0.8em;
+    .about-card .my-img {
+        width: 100%;
+        display: flex;
+        margin-bottom: 4%;
+        min-width: 10rem;
+    }
+
+    .about-card .my-img img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .about .about-card .bio {
+        width: 100%;
+        min-width: 10rem;
     }
 }
 
-@media (max-width:300px) {
-    body {
-        font-size: 10px;
+@media(max-width:860px) {
+
+    .logo {
+        font-size: 1rem;
     }
 
-    .pro-img img {
-        width: 200px;
-        height: 200px;
+    .navigation a {
+        display: none;
+    }
+
+    .navigation .fa-bars {
+        display: block;
+    }
+
+    .navigation {
+        width: fit-content;
+        min-width: 4rem;
     }
 
     .main-content {
-        padding-left: 10px;
-    }
-
-    .about .about-card {
-        width: 10em;
+        padding-left: 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-
+        align-items: center;
+        min-width: 5rem;
     }
 
-    .my-img {
-        margin-right: 5px;
+    .main {
+        padding-top: 4rem;
+        padding-left: 2%;
+    }
+
+    .main-content-texts {
+        text-align: center;
+        align-items: center;
+        min-width: 5rem;
+        width: 100%;
+    }
+
+    .main h2 {
+        font-size: 1rem;
+    }
+
+    .main h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .projects {
+        padding: 6% 4%;
+    }
+
+
+    #email {
+        font-size: 1rem;
+    }
+
+
+    .card {
+        margin: 2rem 2%;
     }
 
     .project-card {
-        background-color: var(--primary-color);
-        border: 1px solid var(--primary-color);
-        min-height: 14em;
-        width: 20em;
-        overflow: hidden;
-        border-radius: 10px;
-        margin: 20px;
-        transition: 0.7s ease;
+        margin: 2rem 2%;
     }
 
-    .main-content {
-        padding-left: 50px;
-        line-height: 25px;
+    .project-info {
+        padding: 3%;
     }
 
+    .about .about-card {
+        padding: 5%;
+    }
 
-    header {
-        background-color: var(--primary-color);
+    .bio {
+        text-align: center;
+    }
+
+    .bio p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .hobby-text {
+        text-align: center;
+    }
+
+    .social-icons {
         width: 100%;
-        position: fixed;
-        z-index: 999;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
     }
 
-    .navigation a {
-        margin-right: 5px;
-        text-decoration: none;
-        color: #3a6cf4;
-        font-weight: bold;
-        font-size: 1.1em;
-        margin-left: 20px;
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        width: 100%;
+        padding: 1%;
+
+    }
+
+
+    .social-icons-footer a {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .social-icons-footer {
+        width: 100%;
+        margin-bottom: 5%;
     }
 
 
